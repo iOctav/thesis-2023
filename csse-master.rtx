@@ -34,8 +34,8 @@
   \def\masterprogname{Master's Program}
 \fi
 
-\ifundeflength\firstskip{4ex}
-\ifundeflength\secondskip{8ex}
+\ifundeflength\firstskip{2ex}
+\ifundeflength\secondskip{4ex}
 \ifundeflength\thirdskip{2ex}
 \ifundeflength\fourthskip{0ex}
 \ifundeflength\fifthskip{5ex}
@@ -43,7 +43,7 @@
 
 \def\titlefont{\Large\bfseries}
 \def\topiclabelfont{\large}
-\def\topicfont{\large\bfseries}
+\def\topicfont{\normalsize\bfseries}
 
 \thispagestyle{empty}
 \enlargethispage{2cm}
@@ -118,8 +118,8 @@
 
 \def\studentlabelcover{\CYRS\cyrt\cyru\cyrd\cyre\cyrn\cyrt\ \groupname\ \@group}
 
-\ifundeflength\firstskip{4ex}
-\ifundeflength\secondskip{8ex}
+\ifundeflength\firstskip{2ex}
+\ifundeflength\secondskip{4ex}
 \ifundeflength\thirdskip{2ex}
 \ifundeflength\fourthskip{0ex}
 \ifundeflength\fifthskip{16ex}
