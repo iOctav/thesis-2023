@@ -412,7 +412,7 @@
   \cyrk\cyro\cyrm\cyrp\cyrsftsn\cyryu\cyrt\cyre\cyrr\cyrn\cyrery\cyrh\ %
   \cyrn\cyra\cyru\cyrk\ \cyri\ %
   \cyrt\cyre\cyrh\cyrn\cyro\cyrl\cyro\cyrg\cyri\cyrishrt}}
-\department{{\cyr\CYRK\cyra\cyrf\cyre\cyrd\cyrr\cyra\ \cyrk\cyro\cyrm\cyrp\cyrsftsn\cyryu\cyrt\cyre\cyrr\cyrn\cyrery\cyrh\ \cyrs\cyri\cyrs\cyrt\cyre\cyrm\ \cyri\ \cyrp\cyrr\cyro\cyrg\cyrr\cyra\cyrm\cyrm\cyrn\cyrery\cyrh\ \cyrt\cyre\cyrh\cyrn\cyro\cyrl\cyro\cyrg\cyri\cyrishrt}}
+\department{{\cyr\CYRV\cyrery\cyrs\cyrsh\cyra\cyrya\ \cyrsh\cyrk\cyro\cyrl\cyra\ \cyri\cyrn\cyrt\cyre\cyrl\cyrl\cyre\cyrk\cyrt\cyru\cyra\cyrl\cyrsftsn\cyrn\cyrery\cyrh\ \cyrs\cyri\cyrs\cyrt\cyre\cyrm\ \cyri\ \cyrs\cyru\cyrp\cyre\cyrr\cyrk\cyro\cyrm\cyrp\cyrsftsn\cyryu\cyrt\cyre\cyrr\cyrn\cyrery\cyrh\ \cyrt\cyre\cyrh\cyrn\cyro\cyrl\cyro\cyrg\cyri\cyrishrt}}
 
 \city{{\cyr\CYRS\cyra\cyrn\cyrk\cyrt-\CYRP\cyre\cyrt\cyre\cyrr\cyrb\cyru\cyrr\cyrg}}
 \date{\number\year}
