@@ -55,4 +55,21 @@
 % Полуторный интервал
 \usepackage{setspace}
 \onehalfspacing
+
+% Содержание
+\usepackage{titletoc}
+\titlecontents{subsection}
+[1.5em] %
+{\smallskip}
+{\thecontentslabel\hspace{1.02em}}%\thecontentslabel
+{\hspace*{2.32em}}
+{\,\,\titlerule*[0.77pc]{.}\contentspage}
+\titlecontents{section}
+[1em] %
+{\smallskip}
+{\thecontentslabel\hspace{1.02em}}%\thecontentslabel
+{\hspace*{2.32em}}
+{\,\,\titlerule*[0.77pc]{.}\contentspage}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
