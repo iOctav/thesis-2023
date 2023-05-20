@@ -596,8 +596,8 @@
 \providecommand\afterappendix{\par\nobreak\vskip 20\p@}
 \providecommand\appendixindent{0\p@}
 \newcommand\appendix{
-  \setcounter{chapter}{0}
-  \setcounter{section}{0}
+  \setcounter{chapter}{1}
+  \setcounter{section}{1}
 
   \let\oldtocprethechapter=\tocprethechapter
   \let\oldtocpostthechapter=\tocpostthechapter
@@ -638,6 +638,22 @@
   \renewcommand\beforechapter{\beforeappendix}
   \renewcommand\afterchapter{\afterappendix}
   \renewcommand\chapterindent{\appendixindent}
+
+  \renewcommand\thefigure{%
+  \ifnum \c@chapter>\z@\CYRP\thechapter.\fi%
+  \@arabic\c@figure}
+
+  \renewcommand\theequation{%
+  \ifnum\c@chapter > \z@\CYRP\thechapter.\fi%
+  \@arabic\c@equation}
+
+  \renewcommand\thetable{%
+  \ifnum \c@chapter>\z@\CYRP\thechapter.\fi%
+  \@arabic\c@table}
+
+  \renewcommand\thelstlisting{%
+  \ifnum \c@chapter>\z@\CYRP\thechapter.\fi%
+  \@arabic\c@lstlisting}
 
   %\gdef\thechapter{\theappendix}
 }
