@@ -184,17 +184,17 @@
 \newcommand\stats@fig@en{%
   pictures%
 }
-\newcommand\stats@lstlisting{%
-  \cyrl\cyri\cyrs\cyrt\cyri\cyrn\cyrg\cyro\cyrv%
-}
-\newcommand\stats@lstlisting@en{%
-  listings%
-}
 \newcommand\stats@table{%
   \cyrt\cyra\cyrb\cyrl\cyri\cyrc\cyr\char251%
 }
 \newcommand\stats@table@en{%
   tables%
+}
+\newcommand\stats@lstlisting{%
+  \cyrl\cyri\cyrs\cyrt\cyri\cyrn\cyrg\cyro\cyrv%
+}
+\newcommand\stats@lstlisting@en{%
+  listings%
 }
 \newcommand\stats@cite{%
   \cyri\cyrs\cyrt.%
@@ -207,6 +207,12 @@
 }
 \newcommand\stats@appendix@en{%
   appendicies%
+}
+\newcommand\abstractkeywordnameen{%
+  \CYRK\CYRL\CYRYU\CYRCH\CYRE\CYRV\CYRERY\CYRE\ \CYRS\CYRL\CYRO\CYRV\CYRA:\ %
+}
+\newcommand\abstractkeywordnameenen{%
+  KEYWORDS:%
 }
 \newcommand\@stats[5]{%
   \stats@report%
@@ -281,7 +287,7 @@
   \gdef\@keywords@en{#1}
 }\keywordsen{}
 
-\newcommand\@makeabstract[4]{%
+\newcommand\@makeabstract[5]{%
   %\clearpage%
   %\thispagestyle{empty}%
   %
@@ -294,11 +300,12 @@
   %
   \begin{flushleft}%
     \MakeUppercase{#3}%
+    \MakeUppercase{#4}%
   \end{flushleft}
   %
   {%
     \hskip\parindent%
-    #4%
+    #5%
   }
 }
 
@@ -312,6 +319,7 @@
       \@tablecount}{%
       \@appendixcount%
     }}{%
+    \abstractkeywordnameen}{%
     \@keywords}{%
     \@abstractcontent%
   }
@@ -326,6 +334,7 @@
       \@tablecount}{%
       \@appendixcount%
     }}{%
+    \abstractkeywordnameenen}{%
     \@keywords@en}{%
     \@abstractcontent@en%
   }
