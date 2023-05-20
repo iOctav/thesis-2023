@@ -67,6 +67,10 @@ make clean
 		* таблица - `\cyrt\cyra\cyrb\cyrl\cyri\cyrc\cyra`
 		* таблицы - `\cyrt\cyra\cyrb\cyrl\cyri\cyrc\cyr\char251`
 		* таблиц - `\cyrt\cyra\cyrb\cyrl\cyri\cyrc`
+	1. на 194 строке 
+		* листинг - `\cyrl\cyri\cyrs\cyrt\cyri\cyrn\cyrg`
+		* листинга - `\cyrl\cyri\cyrs\cyrt\cyri\cyrn\cyrg\cyra`
+		* листингов - `\cyrl\cyri\cyrs\cyrt\cyri\cyrn\cyrg\cyro\cyrv`
 
 _____
 

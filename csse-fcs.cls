@@ -184,6 +184,12 @@
 \newcommand\stats@fig@en{%
   pictures%
 }
+\newcommand\stats@lstlisting{%
+  \cyrl\cyri\cyrs\cyrt\cyri\cyrn\cyrg\cyro\cyrv%
+}
+\newcommand\stats@lstlisting@en{%
+  listings%
+}
 \newcommand\stats@table{%
   \cyrt\cyra\cyrb\cyrl\cyri\cyrc\cyr\char251%
 }
@@ -202,40 +208,46 @@
 \newcommand\stats@appendix@en{%
   appendicies%
 }
-\newcommand\@stats[4]{%
+\newcommand\@stats[5]{%
   \stats@report%
   \IfEq{#1}{0}{}{%
   ~#1~\stats@page%
   }%
   \IfEq{#2}{0}{}{%
-  , #2~\stats@fig%
+  , #2~\stats@lstlisting%
   }%
   \IfEq{#3}{0}{}{%
-  , #3~\stats@table%
+  , #3~\stats@fig%
+  }%
+  \IfEq{#4}{0}{}{%
+  , #4~\stats@table%
   }%
 %  \IfEq{#4}{0}{}{%
 %  , #4~\stats@cite%
 %  }%
-  \IfEq{#4}{0}{}{%
-  , #4~\stats@appendix%
+  \IfEq{#5}{0}{}{%
+  , #5~\stats@appendix%
   }%
 }
-\newcommand\@stats@en[4]{%
+\newcommand\@stats@en[5]{%
   \stats@report@en%
   \IfEq{#1}{0}{}{%
   #1~\stats@page@en%
   }%
   \IfEq{#2}{0}{}{%
-  , #2~\stats@fig@en%
+  , #2~\stats@lstlisting@en%
   }%
   \IfEq{#3}{0}{}{%
-  , #3~\stats@table@en%
+  , #3~\stats@fig@en%
+  }%
+  \IfEq{#4}{0}{}{%
+  , #4~\stats@table@en%
   }%
 %  \IfEq{#4}{0}{}{%
 %  , #4~\stats@cite@en%
 %  }%
-  \IfEq{#4}{0}{}{%
-  , #4~\stats@appendix@en%
+  \IfEq{#5}{0}{}{%
+  , #5~\stats@appendix@en%
   }%
 }
 
@@ -245,6 +257,9 @@
 \newcommand\figcount[1]{%
   \xdef\@figcount{#1}
 }\figcount{0}
+\newcommand\lstlistingcount[1]{%
+  \xdef\@lstlistingcount{#1}
+}\lstlistingcount{0}
 \newcommand\tablecount[1]{%
   \xdef\@tablecount{#1}
 }\tablecount{0}
@@ -292,6 +307,7 @@
     \csseabstractname}{%
     \@stats{%
       \@pagecount}{%
+      \@lstlistingcount}{%
       \@figcount}{%
       \@tablecount}{%
       \@appendixcount%
@@ -305,6 +321,7 @@
     \csseabstractnameen}{%
     \@stats@en{%
       \@pagecount}{%
+      \@lstlistingcount}{%
       \@figcount}{%
       \@tablecount}{%
       \@appendixcount%
@@ -325,12 +342,14 @@
 
 \newcounter{total@page}
 \newcounter{total@figure}
+\newcounter{total@lstlisting}
 \newcounter{total@table}
 \newcounter{total@cite}
 \newcounter{total@appendix}
 
 \gdef\total@page{0}
 \gdef\total@figure{0}
+\gdef\total@lstlisting{0}
 \gdef\total@table{0}
 \gdef\total@cite{0}
 \gdef\total@appendix{0}
@@ -339,6 +358,7 @@
 \AtBeginDocument{
   \pagecount{\total@page}
   \figcount{\total@figure}
+  \lstlistingcount{\total@lstlisting}
   \tablecount{\total@table}
   \citecount{\total@cite}
   \appendixcount{\total@appendix}
@@ -349,11 +369,13 @@
   \setcounter{total@page}{\value{page}}
   %
   \addtocounter{total@figure}{\value{figure}}
+  \addtocounter{total@lstlisting}{\value{lstlisting}}
   \addtocounter{total@table}{\value{table}}
   %
   \immediate\write\@mainaux{
     \string\gdef\string\total@page{\number\value{total@page}}
     \string\gdef\string\total@figure{\number\value{total@figure}}
+    \string\gdef\string\total@lstlisting{\number\value{total@lstlisting}}
     \string\gdef\string\total@table{\number\value{total@table}}
     \string\gdef\string\total@cite{\number\value{total@cite}}
     \string\gdef\string\total@appendix{\number\value{total@appendix}}
@@ -365,6 +387,7 @@
 \def\chapter{%
   \addtocounter{total@figure}{\value{figure}}%
   \addtocounter{total@table}{\value{table}}%
+  \addtocounter{total@lstlisting}{\value{lstlisting}}%
   \stepcounter{total@appendix}%
   \oldchapter%
 }
