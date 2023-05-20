@@ -288,8 +288,8 @@
 }\keywordsen{}
 
 \newcommand\@makeabstract[5]{%
-  %\clearpage%
-  %\thispagestyle{empty}%
+  \clearpage%
+  \thispagestyle{empty}%
   %
   \@makeschapterhead{#1}%
   \@afterheading%
