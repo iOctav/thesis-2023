@@ -375,12 +375,6 @@
 }
 
 \AtEndDocument{
-  \setcounter{total@page}{\value{page}}
-  %
-  \addtocounter{total@figure}{\value{figure}}
-  \addtocounter{total@lstlisting}{\value{lstlisting}}
-  \addtocounter{total@table}{\value{table}}
-  %
   \immediate\write\@mainaux{
     \string\gdef\string\total@page{\number\value{total@page}}
     \string\gdef\string\total@figure{\number\value{total@figure}}
@@ -417,6 +411,12 @@
 \def\oldappendix{}
 \let\oldappendix=\appendix
 \def\appendix{%
+  \setcounter{total@page}{\value{page}}
+  %
+  \addtocounter{total@figure}{\value{figure}}
+  \addtocounter{total@lstlisting}{\value{lstlisting}}
+  \addtocounter{total@table}{\value{table}}
+  %
   \setcounter{total@appendix}{0}%
   \oldappendix%
 }

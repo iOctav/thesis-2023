@@ -71,6 +71,10 @@ make clean
 		* листинг - `\cyrl\cyri\cyrs\cyrt\cyri\cyrn\cyrg`
 		* листинга - `\cyrl\cyri\cyrs\cyrt\cyri\cyrn\cyrg\cyra`
 		* листингов - `\cyrl\cyri\cyrs\cyrt\cyri\cyrn\cyrg\cyro\cyrv`
+	1. на 206 строке 
+		* приложение - `\cyrp\cyrr\cyri\cyrl\cyro\cyrzh\cyre\cyrn\cyri\cyre`
+		* приложения - `\cyrp\cyrr\cyri\cyrl\cyro\cyrzh\cyre\cyrn\cyri\cyrya`
+		* приложений - `\cyrp\cyrr\cyri\cyrl\cyro\cyrzh\cyre\cyrn\cyri\cyrishrt`
 
 _____
 
