@@ -596,8 +596,8 @@
 \providecommand\afterappendix{\par\nobreak\vskip 20\p@}
 \providecommand\appendixindent{0\p@}
 \newcommand\appendix{
-  \setcounter{chapter}{1}
-  \setcounter{section}{1}
+  \setcounter{chapter}{0}
+  \setcounter{section}{0}
 
   \let\oldtocprethechapter=\tocprethechapter
   \let\oldtocpostthechapter=\tocpostthechapter
