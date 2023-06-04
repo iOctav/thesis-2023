@@ -537,17 +537,17 @@
 \renewcommand{\sectionmark}[1]{ \markboth{#1}{} }
 
 \fancyhf{}
-\fancyhead[LE,RO]{\thepage}
+% \fancyhead[LE,RO]{\thepage}
 % \fancyfoot[LE,RO]{\thepage}
-% \fancyhead[R]{\thepage}
+\fancyhead[R]{\thepage}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
 \fancypagestyle{plain}{
   \fancyhf{}
-  \fancyhead[LE,RO]{\thepage}
+  % \fancyhead[LE,RO]{\thepage}
 %  \fancyfoot[LE,RO]{\thepage}
-%  \fancyhead[R]{\thepage}
+ \fancyhead[R]{\thepage}
   \renewcommand{\headrulewidth}{0pt}
   \renewcommand{\footrulewidth}{0pt}
 }
