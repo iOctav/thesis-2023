@@ -1,11 +1,14 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%
 %% Список литературы
+%% Используй \noopsort{1|2} для приоритетов в сортивке.
+%% Например для поднятия источников на русском языке над источниками на английском
 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@preamble{ "\providecommand\noopsort[1]{}" }
 
 @ARTICLE{russian,
-  author = {Василий Пупкин and Василиса Пупкина and Пупкинский, В.П.},
+  author = {\noopsort{1}Василий Пупкин and Василиса Пупкина and Пупкинский, В.П.},
   title = {Русская статья},
   journal = {Научно-технические ведомости НИИ ЧАВО},
   year = 2000,
@@ -16,7 +19,7 @@
 
 @book{java-book,
 	title={Программирование на Java},
-	author={Нимейер, П. and Леук, Д.},
+	author={\noopsort{1}Нимейер, П. and Леук, Д.},
 	isbn={9785457661004},
 	url={https://books.google.ru/books?id=zVpUBQAAQBAJ},
 	year={2014},
@@ -25,11 +28,19 @@
 }
 
 @online{ANTLR,
-	title = {ANTLR},
-	organization = {Веб-сайт проекта ANTLR},
+	title = {\noopsort{1}ANTLR},
+	organization = {\noopsort{1}Веб-сайт проекта ANTLR},
 	url = {http://www.antlr.org/},
 	urldate = {18.06.2015},
 	language = {russian},
+}
+
+@online{RFSTLS13,
+	title = {\noopsort{1}TLS 1.3},
+	organization = {\noopsort{1}IETF},
+	url = {https://www.ietf.org/blog/tls13/},
+	urldate = {11.06.2023},
+	language = {english},
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
