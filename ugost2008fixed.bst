@@ -678,7 +678,7 @@ if$}
 
 FUNCTION {bbl.medium.elres}
 { curlanguage "english" =
-   { "Electronic resource" }
+   { "{ [Electronic resource]}" }
    { curlanguage "russian" =
       { "{ [Электронный ресурс]}" }
       { curlanguage "ukrainian" =
